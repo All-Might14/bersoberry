@@ -9,6 +9,9 @@ import TagEdit from '../views/admin/tags/Edit.vue'
 import UnitCreate from '../views/admin/units/Create.vue'
 import UnitIndex from '../views/admin/units/Index.vue'
 import UnitEdit from '../views/admin/units/Edit.vue'
+import ProductCreate from '../views/admin/products/Create.vue'
+import ProductIndex from '../views/admin/products/Index.vue'
+import ProductEdit from '../views/admin/products/Edit.vue'
 
 
 const router = createRouter({
@@ -65,6 +68,22 @@ const router = createRouter({
           name: 'editUnit',
           component: UnitEdit
         },
+        {
+          path: 'products',
+          name: 'product',
+          component: ProductIndex
+        },
+        {
+          path: 'products/create',
+          name: 'createProduct',
+          component: ProductCreate
+        },
+        {
+          path: 'Products/:id',
+          name: 'editProduct',
+          component: ProductEdit
+        },
+        
       ]
     }
 
